@@ -1,0 +1,62 @@
+$sw-yellow: rgb(246, 231, 48);
+$light-bg: rgb(214, 215, 231);
+
+.favorite-number {
+  text-align: center;
+  margin: 14px;
+  font-size: 2.2rem;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-content: space-between;
+  padding-right: 60px;
+}
+
+.button-container {
+  padding: 35px 15px 0 15px;
+} 
+
+.circle {
+  border-radius: 100%;
+  border: 3px solid $sw-yellow;
+  background-color: $light-bg;
+  width: 70px;
+  height: 70px;
+}
+
+.circle:hover {
+  background-color: $sw-yellow;
+}
+
+.icon {
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.btnTitle {
+  color: $light-bg;
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.btnTitle:hover {
+  color: $sw-yellow;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $sw-yellow;
+}
+
+.filled {
+  background-color: transparent;
+  color: $sw-yellow;
+  text-align: center;
+}
+
+.divider {
+  border-left: 2px solid $light-bg;
+  margin-left: 25px;
+  padding-left: 40px;
+}
