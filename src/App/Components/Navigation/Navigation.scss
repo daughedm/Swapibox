@@ -1,0 +1,24 @@
+$sw-yellow: rgb(246, 231, 48);
+
+* {
+  z-index: 3;
+}
+
+.nav-container {
+  height: 170px;
+  width: 100%;
+  display: flex;
+  background-image: url(../../../Assets/Images/star-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  border-bottom: 3px solid $sw-yellow;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  width: 220px;
+  padding: 0 80px;
+}
+
