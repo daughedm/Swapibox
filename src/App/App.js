@@ -10,8 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      onLandingPage: false,
-      currentCategory: null,
+      onLandingPage: true,
+      currentCategory: '',
       favorites: [],
       vehicles: [],
       people:[],
@@ -32,12 +32,22 @@ class App extends Component {
   //   this.setState(cleanData);
   // }
 
+  handleClick = (category) => {
+    
+    this.setState({ 
+      onLandingPage: false,
+      currentCategory: category
+     })
+  }
+
 
   render() {
     const onLandingPage = this.state.onLandingPage;
     return (
       <div className="App">
-        <Navigation className="App-header" />
+        <Navigation 
+          className="App-header"
+          handleClick={this.handleClick} />
         { onLandingPage ? (
           <OpeningScroll crawl={this.state.crawl}/> 
         ) : (

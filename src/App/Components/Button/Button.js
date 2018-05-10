@@ -4,25 +4,44 @@ import DeathStar from '../../../Assets/Images/deathstar.svg';
 import Falcon from '../../../Assets/Images/falcon.svg';
 import '../Button/Button.css';
 
-const Button = (props) => {
+const Button = ({ handleClick, category }) => {
 
   return (
     <div className="buttons-wrapper" >
-      <div className="button-container">
+      <div 
+        className="button-container" 
+        onClick={() => handleClick('people')} 
+        type="button" 
+      >
         <div className="circle">
-          <img src={Vader} alt="people" type="button" className="icon"/>
+          <img 
+            src={Vader} 
+            alt="people" 
+            className="icon"/>
         </div>
         <h2 className="btnTitle">PEOPLE</h2>
       </div>
-      <div className="button-container">
+      <div 
+        className="button-container" 
+        onClick={() => handleClick('planets')} 
+        type="button">
         <div className="circle">
-          <img src={DeathStar} alt="people" type="button" className="icon"/>
+          <img 
+            src={DeathStar} 
+            alt="planets" 
+            className="icon"/>
         </div>
         <h2 className="btnTitle">PLANETS</h2>
       </div>
-      <div className="button-container">
-        <div className="circle">
-          <img src={Falcon} alt="people" type="button" className="icon"/>
+      <div 
+        className="button-container" 
+        onClick={() => handleClick('vehicles')} 
+        type="button">
+        <div className="circle" >
+          <img 
+            src={Falcon} 
+            alt="vehicles" 
+            className="icon"/>
         </div>
         <h2 className="btnTitle">VEHICLES</h2>
       </div>

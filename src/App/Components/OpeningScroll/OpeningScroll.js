@@ -1,5 +1,6 @@
 import React from 'react';
 import '../OpeningScroll/OpeningScroll.css'
+import soundtrack from '../../../Assets/Audio/star-wars-theme-song.mp3'
 
 const OpeningScroll = (props) => {
 
@@ -15,6 +16,7 @@ const OpeningScroll = (props) => {
           <p>{props.crawl.opening_crawl}</p>
         </div>
       </section>
+      <audio src={soundtrack} autoPlay="true" />
     </div>
   )
 }
