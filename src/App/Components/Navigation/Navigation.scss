@@ -1,9 +1,5 @@
 $sw-yellow: rgb(246, 231, 48);
 
-* {
-  z-index: 3;
-}
-
 .nav-container {
   height: 170px;
   width: 100%;
@@ -14,7 +10,6 @@ $sw-yellow: rgb(246, 231, 48);
   position: fixed;
   border-bottom: 3px solid $sw-yellow;
   justify-content: space-between;
-  
 }
 
 .logo {

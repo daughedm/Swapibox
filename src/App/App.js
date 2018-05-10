@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Navigation from './Components/Navigation/Navigation';
 import OpeningScroll from './Components/OpeningScroll/OpeningScroll';
-import Main from './Components/Main/Main'
+import Main from './Components/Main/Main';
+import { crawlFetch } from './Helpers/Api';
 
 import './App.scss';
 
@@ -9,18 +10,20 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      onLandingPage: true,
+      onLandingPage: false,
       currentCategory: null,
       favorites: [],
       vehicles: [],
       people:[],
       planets: [],
-      scroll: []
+      crawl: []
     }
   }
 
   async componentDidMount() {
-    // const apiCall = await starWarsData('films');
+    const filmsUrl = 'https://swapi.co/api/films/';
+    const crawlText = await crawlFetch(filmsUrl);
+    this.setState({ crawl: crawlText });
   };
 
   // handleClick = (e, cat) => {
@@ -36,7 +39,7 @@ class App extends Component {
       <div className="App">
         <Navigation className="App-header" />
         { onLandingPage ? (
-          <OpeningScroll /> 
+          <OpeningScroll crawl={this.state.crawl}/> 
         ) : (
           <Main />
         )}

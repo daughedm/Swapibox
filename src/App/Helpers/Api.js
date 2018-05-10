@@ -1,9 +1,10 @@
-import 
+import { crawlCleaner, peopleCleaner, vehiclesCleaner, planetsCleaner } from '../Helpers/Cleaner'
 
-class Api {
-  constructor() {
-    this.data = new
-  }
-
-
+const crawlFetch = async (url) => {
+  const response = await fetch(url);
+  const filmsData = await response.json();
+  const crawl = crawlCleaner(filmsData);
+  return crawl;
 }
+
+export { crawlFetch }

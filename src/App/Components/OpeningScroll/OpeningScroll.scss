@@ -7,12 +7,10 @@ body {
 }
 
 .fade {
-  // position: relative;
   width: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
   top:  315px;
   background-image: linear-gradient(0deg, transparent, black 75%);
-  // z-index: 1;
 }
 
 .star-wars {
@@ -29,6 +27,7 @@ body {
   perspective: 400px;
   text-align: justify;
   z-index: -1;
+  white-space: initial;
 }
 
 .crawl {
@@ -51,7 +50,7 @@ body {
 @keyframes crawl {
   0% {
     top: -100px;
-    transform: rotateX(20deg) translateZ(0);
+    transform: rotateX(15deg) translateZ(0);
   }
   100% {
     top: -6000px;

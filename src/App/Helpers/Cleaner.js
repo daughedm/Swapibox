@@ -1,5 +1,5 @@
 const crawlCleaner = (rawData) => {
-  let randNum = Math.floor(Math.random() * 1) + 1;
+  let randNum = Math.floor(Math.random() * 7);
   let cleanCrawlData = rawData.results.map(film => {
     return { 
       title: film.title, 
@@ -23,7 +23,16 @@ const peopleCleaner = (rawData) => {
 }
 
 const planetsCleaner = (rawData) => {
-
+  const cleanPlanetsData = rawData.results.map(planet => {
+    return {
+      name: planet.name,
+      terrain: planet.terrain,
+      population: planet.population,
+      climate: planet.climate,
+      residents: planet.residents
+    }
+  })
+  return cleanPlanetsData;
 }
 
 const vehiclesCleaner = (rawData) => {
