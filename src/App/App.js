@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Navigation from './Components/Navigation/Navigation';
 import OpeningScroll from './Components/OpeningScroll/OpeningScroll';
 import Main from './Components/Main/Main';
-import { crawlFetch } from './Helpers/Api';
+import { crawlFetch, vehiclesFetch, peopleFetch, planetsFetch } from './Helpers/Api';
+import { peopleCleaner } from './Helpers/Cleaner';
 
 import './App.scss';
 
@@ -32,12 +33,34 @@ class App extends Component {
   //   this.setState(cleanData);
   // }
 
-  handleClick = (category) => {
-    
-    this.setState({ 
-      onLandingPage: false,
-      currentCategory: category
-     })
+  handleClick = async (category) => {
+    const vehicleUrl = 'https://swapi.co/api/vehicles/';
+    const peopleUrl = 'https://swapi.co/api/people/';
+    const planetsUrl = 'https://swapi.co/api/planets/';
+
+    if (category === 'vehicles') {
+      const vehicleData = await vehiclesFetch(vehicleUrl);
+      this.setState({ 
+        vehicles: vehicleData,
+        onLandingPage: false,
+        currentCategory: category 
+      });
+    } else if (category === 'people') {
+      const peopleData = await peopleFetch(peopleUrl);
+      const cleanedPeopleData = peopleCleaner(peopleData)
+      this.setState({
+        people: cleanedPeopleData,
+        onLandingPage: false,
+        currentCategory: category
+      });
+    } else if (category === 'planets') {
+      const planetsData = await planetsFetch(planetsUrl);
+      this.setState({
+        planets: planetsData,
+        onLandingPage: false,
+        currentCategory: category
+      });
+    }
   }
 
 
@@ -51,8 +74,14 @@ class App extends Component {
         { onLandingPage ? (
           <OpeningScroll crawl={this.state.crawl}/> 
         ) : (
-          <Main />
-        )}
+            <Main 
+              favorites={this.state.favorites}
+              vehicles={this.state.vehicles}
+              people={this.state.people}
+              planets={this.state.planets} 
+              currentCategory={this.state.currentCategory}
+            />
+      )}
       </div>
       );
   }

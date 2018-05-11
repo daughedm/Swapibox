@@ -3,13 +3,15 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#244356;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#244356;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#F5E62D;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#F5E62D;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
 	.st2{display:none;}
 	.st3{display:inline;}
-	.st4{display:inline;fill:none;stroke:#244356;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
-	.st5{display:inline;fill:none;stroke:#244356;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st6{display:inline;fill:none;stroke:#879CBE;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{display:inline;fill:none;stroke:#F5E62D;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{display:inline;fill:none;stroke:#F5E62D;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{display:inline;fill:none;stroke:#FFFF33;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#FFFF33;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{display:inline;fill:none;stroke:#FFFF33;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <g id="vader">
 	<path class="st0" d="M110.2,131.1c4.2,2.8,16.2,4.4,27.1,4.3"/>
@@ -78,38 +80,38 @@
 		s42.5,95,95,95C115.8,194,130.7,190.3,143.8,183.4L143.8,183.4z"/>
 </g>
 <g id="vehicles" class="st2">
-	<line class="st5" x1="69.3" y1="95.5" x2="33.4" y2="59.6"/>
-	<line class="st5" x1="85.2" y1="82.3" x2="48.3" y2="45.3"/>
+	<line class="st6" x1="69.3" y1="95.5" x2="33.4" y2="59.6"/>
+	<line class="st6" x1="85.2" y1="82.3" x2="48.3" y2="45.3"/>
 	<g class="st3">
-		<circle class="st0" cx="47.4" cy="152.5" r="2.1"/>
+		<circle class="st7" cx="47.4" cy="152.5" r="2.1"/>
 	</g>
 	<g class="st3">
-		<circle class="st0" cx="62" cy="137.9" r="2.1"/>
+		<circle class="st7" cx="62" cy="137.9" r="2.1"/>
 	</g>
 	<g class="st3">
-		<circle class="st0" cx="33" cy="128.4" r="2.1"/>
+		<circle class="st7" cx="33" cy="128.4" r="2.1"/>
 	</g>
 	<g class="st3">
-		<circle class="st0" cx="51.6" cy="119.6" r="2.1"/>
+		<circle class="st7" cx="51.6" cy="119.6" r="2.1"/>
 	</g>
 	<g class="st3">
-		<circle class="st0" cx="71.5" cy="166.9" r="2.1"/>
+		<circle class="st7" cx="71.5" cy="166.9" r="2.1"/>
 	</g>
 	<g class="st3">
-		<circle class="st0" cx="80.3" cy="148.3" r="2.1"/>
+		<circle class="st7" cx="80.3" cy="148.3" r="2.1"/>
 	</g>
-	<polyline class="st5" points="103.7,84.5 174.5,13.8 165.7,5 68.3,34.9 	"/>
-	<line class="st5" x1="154" y1="34.2" x2="165.7" y2="45.9"/>
-	<path class="st5" d="M152.2,59.3c11.7,14.5,17.1,32.7,16.6,50.4"/>
+	<polyline class="st6" points="103.7,84.5 174.5,13.8 165.7,5 68.3,34.9 	"/>
+	<line class="st6" x1="154" y1="34.2" x2="165.7" y2="45.9"/>
+	<path class="st6" d="M152.2,59.3c11.7,14.5,17.1,32.7,16.6,50.4"/>
 	<path class="st6" d="M156.9,136.4"/>
-	<polyline class="st5" points="114.7,96.8 186.1,25.4 194.9,34.2 172.1,106.7 	"/>
-	<path class="st5" d="M122.7,119.7l53.3,12.4L192,116c4-4,4-10.6,0-14.6l0,0c-4-4-10.6-4-14.6,0l-8.6,8.4l-54.2-13"/>
-	<line class="st5" x1="154.8" y1="151.8" x2="115.6" y2="112.8"/>
-	<line class="st5" x1="140.6" y1="166.8" x2="102.6" y2="128.5"/>
-	<circle class="st4" cx="91.7" cy="106.2" r="24.8"/>
-	<line class="st5" x1="17.2" y1="95.9" x2="69.3" y2="95.5"/>
-	<line class="st5" x1="104" y1="182.8" x2="102.5" y2="128.5"/>
-	<path class="st5" d="M166.1,129.8c-3.5,11.5-9.9,22.4-19,31.5c-12,12-27.1,19.2-42.7,21.5L92.1,195l0,0c-20.7,0-44.4-8.6-61.6-25.7
+	<polyline class="st6" points="114.7,96.8 186.1,25.4 194.9,34.2 172.1,106.7 	"/>
+	<path class="st6" d="M122.7,119.7l53.3,12.4L192,116c4-4,4-10.6,0-14.6l0,0c-4-4-10.6-4-14.6,0l-8.6,8.4l-54.2-13"/>
+	<line class="st6" x1="154.8" y1="151.8" x2="115.6" y2="112.8"/>
+	<line class="st6" x1="140.6" y1="166.8" x2="102.6" y2="128.5"/>
+	<circle class="st8" cx="91.7" cy="106.2" r="24.8"/>
+	<line class="st6" x1="17.2" y1="95.9" x2="69.3" y2="95.5"/>
+	<line class="st6" x1="104" y1="182.8" x2="102.5" y2="128.5"/>
+	<path class="st6" d="M166.1,129.8c-3.5,11.5-9.9,22.4-19,31.5c-12,12-27.1,19.2-42.7,21.5L92.1,195l0,0c-20.7,0-44.4-8.6-61.6-25.7
 		c-17.1-17.1-25.7-39.5-25.7-61.9l0,0l12.4-11.5c2.4-15.5,9.9-30.7,21.8-42.7c27.8-27.8,71.7-29.7,101.7-5.7"/>
 </g>
 </svg>

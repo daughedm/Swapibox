@@ -11,7 +11,7 @@ const crawlCleaner = (rawData) => {
 }
 
 const peopleCleaner = (rawData) => {
-  const cleanPeopleData = rawData.results.map(person => {
+  const cleanPeopleData = rawData.map(person => {
     return {
       name: person.name,
       homeworld: person.homeworld,
@@ -46,8 +46,6 @@ const vehiclesCleaner = (rawData) => {
   })
   return cleanVehiclesData;
 }
-
-
 
 export { 
   crawlCleaner, 
