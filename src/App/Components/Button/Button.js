@@ -45,7 +45,10 @@ const Button = ({ handleClick, category, favorites }) => {
         </div>
         <h2 className="btnTitle">VEHICLES</h2>
       </div>
-      <div className="button-container divider">
+      <div 
+        className="button-container divider"
+        onClick={() => handleClick('favorites')}
+        >
         <div className="circle filled">
           <h3 className="favorite-number">{favorites.length ? favorites.length : 0}</h3>
         </div>

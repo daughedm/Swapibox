@@ -27,7 +27,7 @@ class App extends Component {
     this.setState({ crawl: crawlText });
   };
 
-  addFavorite = (e, cat) => {
+  addFavorite = (favorite) => {
     
   }
 
