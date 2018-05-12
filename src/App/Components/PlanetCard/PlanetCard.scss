@@ -1,0 +1,105 @@
+.card-planet {
+  background-color: white;
+  width: 250px;
+  height: 400px;
+  padding: 15px;
+  margin: 15px;
+  overflow: auto;
+}
+
+.card-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(92, 92, 92);
+  border-bottom: 2px solid $sw-yellow;
+  margin: 0;
+  padding: 15px 0 15px 0;
+}
+
+.sub-categories {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(92, 92, 92);
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.normal {
+  font-weight: 300;
+  color: rgb(92, 92, 92);
+}
+
+.top {
+  padding: 20px 0 10px 0;
+}
+
+.planets0 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/alderaan.jpg);
+  background-size: cover;
+}
+
+.planets1 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/Yavin.jpg);
+  background-size: cover;
+}
+
+.planets2 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/Hoth.jpg);
+  background-size: cover;
+}
+
+.planets3 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/Dagobah.jpg);
+  background-size: cover;
+}
+
+.planets4 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/Bespin.jpg);
+  background-size: cover;
+}
+
+.planets5 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/endor.jpg);
+  background-size: cover;
+}
+
+.planets6 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/naboo.jpg);
+  background-size: cover;
+}
+
+.planets7 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/Coruscant.jpg);
+  background-size: cover;
+}
+
+.planets8 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/kamino.jpg);
+  background-size: cover;
+}
+
+.planets9 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/geonosis.jpg);
+  background-size: cover;
+}

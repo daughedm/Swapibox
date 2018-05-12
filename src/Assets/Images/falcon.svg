@@ -4,12 +4,11 @@
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
-	.st1{display:inline;fill:none;stroke:#244356;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{display:inline;fill:none;stroke:#244356;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{display:inline;fill:none;stroke:#F5E62D;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{display:inline;fill:none;stroke:#F5E62D;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
 	.st3{display:inline;}
-	.st4{fill:none;stroke:#244356;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#244356;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:#879CBE;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#F5E62D;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#F5E62D;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g id="vader" class="st0">
 	<path class="st1" d="M110.2,131.1c4.2,2.8,16.2,4.4,27.1,4.3"/>
@@ -101,7 +100,7 @@
 	<polyline class="st5" points="103.7,84.5 174.5,13.8 165.7,5 68.3,34.9 	"/>
 	<line class="st5" x1="154" y1="34.2" x2="165.7" y2="45.9"/>
 	<path class="st5" d="M152.2,59.3c11.7,14.5,17.1,32.7,16.6,50.4"/>
-	<path class="st6" d="M156.9,136.4"/>
+	<path class="st5" d="M156.9,136.4"/>
 	<polyline class="st5" points="114.7,96.8 186.1,25.4 194.9,34.2 172.1,106.7 	"/>
 	<path class="st5" d="M122.7,119.7l53.3,12.4L192,116c4-4,4-10.6,0-14.6l0,0c-4-4-10.6-4-14.6,0l-8.6,8.4l-54.2-13"/>
 	<line class="st5" x1="154.8" y1="151.8" x2="115.6" y2="112.8"/>

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Navigation from './Components/Navigation/Navigation';
 import OpeningScroll from './Components/OpeningScroll/OpeningScroll';
-import Main from './Components/Main/Main'
+import Main from './Components/Main/Main';
+import { crawlFetch, vehiclesFetch, peopleFetch, planetsFetch } from './Helpers/Api';
+import { peopleCleaner } from './Helpers/Cleaner';
 
 import './App.scss';
 
@@ -10,36 +12,80 @@ class App extends Component {
     super(props);
     this.state = {
       onLandingPage: true,
-      currentCategory: null,
+      currentCategory: '',
       favorites: [],
       vehicles: [],
       people:[],
       planets: [],
-      scroll: []
+      crawl: []
     }
   }
 
   async componentDidMount() {
-    // const apiCall = await starWarsData('films');
+    const filmsUrl = 'https://swapi.co/api/films/';
+    const crawlText = await crawlFetch(filmsUrl);
+    this.setState({ crawl: crawlText });
   };
 
-  // handleClick = (e, cat) => {
-  //   const data = await starwarsData(cat)
-  //   const cleanData = await cleanData(data)
-  //   this.setState(cleanData);
-  // }
+  addFavorite = (e, cat) => {
+    
+  }
+
+  handleClick = async (category) => {
+    const vehicleUrl = 'https://swapi.co/api/vehicles/';
+    const peopleUrl = 'https://swapi.co/api/people/';
+    const planetsUrl = 'https://swapi.co/api/planets/';
+
+    if (category === 'vehicles') {
+      const vehicleData = await vehiclesFetch(vehicleUrl);
+      this.setState({ 
+        vehicles: vehicleData,
+        onLandingPage: false,
+        currentCategory: category 
+      });
+    } else if (category === 'people') {
+      const peopleData = await peopleFetch(peopleUrl);
+      const cleanedPeopleData = peopleCleaner(peopleData)
+      this.setState({
+        people: cleanedPeopleData,
+        onLandingPage: false,
+        currentCategory: category
+      });
+    } else if (category === 'planets') {
+      const planetsData = await planetsFetch(planetsUrl);
+      this.setState({
+        planets: planetsData,
+        onLandingPage: false,
+        currentCategory: category
+      });
+    } else if (category === 'favorites') {
+      this.setState({
+        onLandingPage: false,
+        currentCategory: category
+      });
+    }
+  }
 
 
   render() {
     const onLandingPage = this.state.onLandingPage;
     return (
       <div className="App">
-        <Navigation className="App-header" />
+        <Navigation 
+          className="App-header"
+          favorites={this.state.favorites}
+          handleClick={this.handleClick} />
         { onLandingPage ? (
-          <OpeningScroll /> 
+          <OpeningScroll crawl={this.state.crawl}/> 
         ) : (
-          <Main />
-        )}
+            <Main 
+              favorites={this.state.favorites}
+              vehicles={this.state.vehicles}
+              people={this.state.people}
+              planets={this.state.planets} 
+              currentCategory={this.state.currentCategory}
+            />
+      )}
       </div>
       );
   }

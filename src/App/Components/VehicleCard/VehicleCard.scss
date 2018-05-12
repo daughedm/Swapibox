@@ -1,0 +1,105 @@
+.card {
+  background-color: white;
+  width: 250px;
+  height: 350px;
+  padding: 15px;
+  margin: 15px;
+  overflow: auto;
+}
+
+.card-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(92, 92, 92);
+  border-bottom: 2px solid $sw-yellow;
+  margin: 0;
+  padding: 15px 0 15px 0;
+}
+
+.sub-categories {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(92, 92, 92);
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.normal {
+  font-weight: 300;
+  color: rgb(92, 92, 92);
+}
+
+.top {
+  padding: 20px 0 10px 0;
+}
+
+.vehicle0 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/sandcrawler.jpg);
+  background-size: cover;
+}
+
+.vehicle1 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/skyhopper.jpg);
+  background-size: cover;
+}
+
+.vehicle2 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/landspeeder.jpg);
+  background-size: cover;
+}
+
+.vehicle3 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/tie-fighter.jpg);
+  background-size: cover;
+}
+
+.vehicle4 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/Snowspeeder.jpg);
+  background-size: cover;
+}
+
+.vehicle5 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/tie-bomber.jpg);
+  background-size: cover;
+}
+
+.vehicle6 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/ATAT.jpg);
+  background-size: cover;
+}
+
+.vehicle7 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/ATST.jpg);
+  background-size: cover;
+}
+
+.vehicle8 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/twinpod.jpg);
+  background-size: cover;
+}
+
+.vehicle9 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../../../Assets/Images/sailbarge.jpg);
+  background-size: cover;
+}

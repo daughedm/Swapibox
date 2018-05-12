@@ -20,13 +20,14 @@ $light-bg: rgb(214, 215, 231);
 .circle {
   border-radius: 100%;
   border: 3px solid $sw-yellow;
-  background-color: $light-bg;
+  // background-color: $light-bg;
   width: 70px;
   height: 70px;
 }
 
 .circle:hover {
-  background-color: $sw-yellow;
+  border: 3px dashed $sw-yellow;
+  cursor: pointer;
 }
 
 .icon {
