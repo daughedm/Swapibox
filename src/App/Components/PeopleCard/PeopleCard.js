@@ -1,10 +1,17 @@
 import React from 'react';
 import '../PeopleCard/PeopleCard.css';
+import PropTypes from 'prop-types';
 
-const PeopleCard = ({ Data, image }) => {
+const PeopleCard = ({ Data, image, addFavorite}) => {
   return (
     <div className="card" >
-      <div className={image} alt="luke"><div className="favorite"></div></div>
+      <div className={image} alt="person">
+        <div 
+          className="favorite"
+          onClick={(event) => addFavorite(event.target)}
+        >
+        </div>
+      </div>
       <h3 className="card-header">{Data.name}</h3>
       <h5 className="sub-categories top">Species: <span className="normal">{Data.species}</span></h5>
       <h5 className="sub-categories">Homeworld: <span className="normal">{Data.homeworld}</span></h5>
@@ -13,4 +20,9 @@ const PeopleCard = ({ Data, image }) => {
   )
 }
 
+PeopleCard.propTypes = {
+  Data: PropTypes.array,
+  image: PropTypes.string,
+  addFavorite: PropTypes.func
+};
 export default PeopleCard;

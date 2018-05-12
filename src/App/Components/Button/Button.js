@@ -3,6 +3,7 @@ import Vader from '../../../Assets/Images/vader.svg';
 import DeathStar from '../../../Assets/Images/deathstar.svg';
 import Falcon from '../../../Assets/Images/falcon.svg';
 import '../Button/Button.css';
+import PropTypes from 'prop-types';
 
 const Button = ({ handleClick, category, favorites }) => {
 
@@ -57,5 +58,11 @@ const Button = ({ handleClick, category, favorites }) => {
     </div>
   )
 }
+
+Button.propTypes = {
+  handleClick: PropTypes.func,
+  category: PropTypes.string,
+  favorites: PropTypes.array
+};
 
 export default Button;

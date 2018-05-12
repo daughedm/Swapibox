@@ -3,13 +3,15 @@ import PeopleCard from '../PeopleCard/PeopleCard';
 import PlanetCard from '../PlanetCard/PlanetCard';
 import VehicleCard from '../VehicleCard/VehicleCard';
 import '../Main/Main.css';
+import PropTypes from 'prop-types';
 
 const Main = ({ 
   favorites, 
   vehicles,
   people,
   planets,
-  currentCategory
+  currentCategory,
+  addFavorite
 }) => {
   const peopleImages = ['people0', 'people1', 'people2', 'people3', 'people4', 'people5', 'people6', 'people7', 'people8', 'people9'];
   const vehicleImages = ['vehicle0', 'vehicle1', 'vehicle2', 'vehicle3', 'vehicle4', 'vehicle5', 'vehicle6', 'vehicle7', 'vehicle8', 'vehicle9'];
@@ -22,6 +24,7 @@ const Main = ({
               key={currentCategory+[i]}
               image={peopleImages[i]}
               currentCategory={currentCategory}
+              addFavorite={addFavorite}
               />
     }) 
   } else if (currentCategory === 'vehicles'){
@@ -31,6 +34,7 @@ const Main = ({
               key={currentCategory + [i]}
               image={vehicleImages[i]}
               currentCategory={currentCategory}
+              addFavorite={addFavorite}
             />
     }) 
   } else if (currentCategory === 'planets'){
@@ -40,14 +44,24 @@ const Main = ({
               key={currentCategory + [i]}
               image={planetsImages[i]}
               currentCategory={currentCategory}
+              addFavorite={ addFavorite}
       />
     })   
   }
+
   return (
     <div className="main">
       {cards}
     </div>
   )
 }
+
+Main.propTypes = {
+  favorites: PropTypes.array,
+  people: PropTypes.array,
+  planets: PropTypes.array,
+  currentCategory: PropTypes.string,
+  addFavorite: PropTypes.func,
+};
 
 export default Main;
