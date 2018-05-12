@@ -27,11 +27,9 @@ class App extends Component {
     this.setState({ crawl: crawlText });
   };
 
-  // handleClick = (e, cat) => {
-  //   const data = await starwarsData(cat)
-  //   const cleanData = await cleanData(data)
-  //   this.setState(cleanData);
-  // }
+  addFavorite = (e, cat) => {
+    
+  }
 
   handleClick = async (category) => {
     const vehicleUrl = 'https://swapi.co/api/vehicles/';
@@ -60,6 +58,11 @@ class App extends Component {
         onLandingPage: false,
         currentCategory: category
       });
+    } else if (category === 'favorites') {
+      this.setState({
+        onLandingPage: false,
+        currentCategory: category
+      });
     }
   }
 
@@ -70,6 +73,7 @@ class App extends Component {
       <div className="App">
         <Navigation 
           className="App-header"
+          favorites={this.state.favorites}
           handleClick={this.handleClick} />
         { onLandingPage ? (
           <OpeningScroll crawl={this.state.crawl}/> 

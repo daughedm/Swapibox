@@ -4,7 +4,7 @@ import DeathStar from '../../../Assets/Images/deathstar.svg';
 import Falcon from '../../../Assets/Images/falcon.svg';
 import '../Button/Button.css';
 
-const Button = ({ handleClick, category }) => {
+const Button = ({ handleClick, category, favorites }) => {
 
   return (
     <div className="buttons-wrapper" >
@@ -47,7 +47,7 @@ const Button = ({ handleClick, category }) => {
       </div>
       <div className="button-container divider">
         <div className="circle filled">
-          <h3 className="favorite-number">12</h3>
+          <h3 className="favorite-number">{favorites.length ? favorites.length : 0}</h3>
         </div>
         <h2 className="btnTitle">FAVORITES</h2>
       </div>
