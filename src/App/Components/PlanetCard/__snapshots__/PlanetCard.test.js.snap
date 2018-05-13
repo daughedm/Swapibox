@@ -36,7 +36,14 @@ ShallowWrapper {
 >
           <div
                     className="favorite"
-          />
+                    onClick={[Function]}
+          >
+                    <img
+                              alt="favorite"
+                              className="fav-icon"
+                              src="like.svg"
+                    />
+          </div>
 </div>,
         <h3
           className="card-header"
@@ -44,7 +51,7 @@ ShallowWrapper {
         <h5
           className="sub-categories top"
 >
-          Climate: 
+          Climate:
           <span
                     className="normal"
           />
@@ -52,7 +59,7 @@ ShallowWrapper {
         <h5
           className="sub-categories"
 >
-          Terrain: 
+          Terrain:
           <span
                     className="normal"
           />
@@ -60,7 +67,7 @@ ShallowWrapper {
         <h5
           className="sub-categories"
 >
-          Population: 
+          Population:
           <span
                     className="normal"
           />
@@ -68,7 +75,7 @@ ShallowWrapper {
         <h5
           className="sub-categories"
 >
-          Residents: 
+          Residents:
           <span
                     className="normal"
           />
@@ -86,7 +93,14 @@ ShallowWrapper {
           "alt": "planet",
           "children": <div
             className="favorite"
-/>,
+            onClick={[Function]}
+>
+            <img
+                        alt="favorite"
+                        className="fav-icon"
+                        src="like.svg"
+            />
+</div>,
           "className": undefined,
         },
         "ref": null,
@@ -95,10 +109,28 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": <img
+              alt="favorite"
+              className="fav-icon"
+              src="like.svg"
+/>,
             "className": "favorite",
+            "onClick": [Function],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "favorite",
+              "className": "fav-icon",
+              "src": "like.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
           "type": "div",
         },
         "type": "div",
@@ -121,7 +153,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Climate: ",
+            "Climate:",
             <span
               className="normal"
 />,
@@ -130,7 +162,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Climate: ",
+          "Climate:",
           Object {
             "instance": null,
             "key": undefined,
@@ -152,7 +184,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Terrain: ",
+            "Terrain:",
             <span
               className="normal"
 />,
@@ -161,7 +193,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Terrain: ",
+          "Terrain:",
           Object {
             "instance": null,
             "key": undefined,
@@ -183,7 +215,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Population: ",
+            "Population:",
             <span
               className="normal"
 />,
@@ -192,7 +224,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Population: ",
+          "Population:",
           Object {
             "instance": null,
             "key": undefined,
@@ -214,7 +246,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Residents: ",
+            "Residents:",
             <span
               className="normal"
 />,
@@ -223,7 +255,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Residents: ",
+          "Residents:",
           Object {
             "instance": null,
             "key": undefined,
@@ -255,7 +287,14 @@ ShallowWrapper {
 >
             <div
                         className="favorite"
-            />
+                        onClick={[Function]}
+            >
+                        <img
+                                    alt="favorite"
+                                    className="fav-icon"
+                                    src="like.svg"
+                        />
+            </div>
 </div>,
           <h3
             className="card-header"
@@ -263,7 +302,7 @@ ShallowWrapper {
           <h5
             className="sub-categories top"
 >
-            Climate: 
+            Climate:
             <span
                         className="normal"
             />
@@ -271,7 +310,7 @@ ShallowWrapper {
           <h5
             className="sub-categories"
 >
-            Terrain: 
+            Terrain:
             <span
                         className="normal"
             />
@@ -279,7 +318,7 @@ ShallowWrapper {
           <h5
             className="sub-categories"
 >
-            Population: 
+            Population:
             <span
                         className="normal"
             />
@@ -287,7 +326,7 @@ ShallowWrapper {
           <h5
             className="sub-categories"
 >
-            Residents: 
+            Residents:
             <span
                         className="normal"
             />
@@ -305,7 +344,14 @@ ShallowWrapper {
             "alt": "planet",
             "children": <div
               className="favorite"
-/>,
+              onClick={[Function]}
+>
+              <img
+                            alt="favorite"
+                            className="fav-icon"
+                            src="like.svg"
+              />
+</div>,
             "className": undefined,
           },
           "ref": null,
@@ -314,10 +360,28 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": <img
+                alt="favorite"
+                className="fav-icon"
+                src="like.svg"
+/>,
               "className": "favorite",
+              "onClick": [Function],
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "favorite",
+                "className": "fav-icon",
+                "src": "like.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
             "type": "div",
           },
           "type": "div",
@@ -340,7 +404,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Climate: ",
+              "Climate:",
               <span
                 className="normal"
 />,
@@ -349,7 +413,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Climate: ",
+            "Climate:",
             Object {
               "instance": null,
               "key": undefined,
@@ -371,7 +435,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Terrain: ",
+              "Terrain:",
               <span
                 className="normal"
 />,
@@ -380,7 +444,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Terrain: ",
+            "Terrain:",
             Object {
               "instance": null,
               "key": undefined,
@@ -402,7 +466,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Population: ",
+              "Population:",
               <span
                 className="normal"
 />,
@@ -411,7 +475,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Population: ",
+            "Population:",
             Object {
               "instance": null,
               "key": undefined,
@@ -433,7 +497,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Residents: ",
+              "Residents:",
               <span
                 className="normal"
 />,
@@ -442,7 +506,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Residents: ",
+            "Residents:",
             Object {
               "instance": null,
               "key": undefined,
