@@ -28,8 +28,8 @@ const PeopleCard = ({ Data, image, addFavorite}) => {
         <span className="normal"> {Data.population}</span>
       </h5>
     </div>
-  )
-}
+  );
+};
 
 PeopleCard.propTypes = {
   Data: PropTypes.object,

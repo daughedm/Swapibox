@@ -18,24 +18,24 @@ class App extends Component {
       people:[],
       planets: [],
       crawl: {}
-    }
+    };
   }
 
   async componentDidMount() {
     const filmsUrl = 'https://swapi.co/api/films/';
     const crawlText = await crawlFetch(filmsUrl);
     this.setState({ crawl: crawlText });
-  };
+  }
 
   addFavorite = ( selectedCard ) => {
     const favorites = this.state.favorites;
     const newFavorites = this.updateFavorites(favorites, selectedCard);
-    this.setState({favorites: newFavorites})
+    this.setState({favorites: newFavorites});
   }
 
- updateFavorites = (favorites, selectedCard) => {
+  updateFavorites = (favorites, selectedCard) => {
     const match = favorites.find(item => item === selectedCard);
-    selectedCard.favorite = match ? "false" : "true"
+    selectedCard.favorite = match ? "false" : "true";
 
     return match ? this.removeFavorite(favorites, selectedCard) : [...favorites, selectedCard];
   }
@@ -56,7 +56,7 @@ class App extends Component {
       });
     } else if (category === 'people') {
       const peopleData = await peopleFetch(peopleUrl);
-      const cleanedPeopleData = peopleCleaner(peopleData)
+      const cleanedPeopleData = peopleCleaner(peopleData);
       this.setState({
         people: cleanedPeopleData,
         onLandingPage: false,
@@ -88,17 +88,17 @@ class App extends Component {
         { onLandingPage ? (
           <OpeningScroll crawl={this.state.crawl}/> 
         ) : (
-            <Main 
-              favorites={this.state.favorites}
-              vehicles={this.state.vehicles}
-              people={this.state.people}
-              planets={this.state.planets} 
-              currentCategory={this.state.currentCategory}
-              addFavorite={this.addFavorite}
-            />
-      )}
+          <Main 
+            favorites={this.state.favorites}
+            vehicles={this.state.vehicles}
+            people={this.state.people}
+            planets={this.state.planets} 
+            currentCategory={this.state.currentCategory}
+            addFavorite={this.addFavorite}
+          />
+        )}
       </div>
-      );
+    );
   }
 }
 

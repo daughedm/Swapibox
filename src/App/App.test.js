@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import App from './App';
 
 describe('App', () => {
@@ -19,7 +19,7 @@ describe('App', () => {
       people: [],
       planets: [],
       crawl: {}
-    }
+    };
     const wrapper = shallow(<App />, { disableLifecycleMethods: true });
 
     expect(wrapper.state()).toEqual(expectedState);
@@ -44,9 +44,9 @@ describe('App', () => {
       people: [],
       planets: [],
       crawl: {}
-    }
+    };
 
-    wrapper.setState(updatedState)
+    wrapper.setState(updatedState);
     
     expect(wrapper.find('Navigation').length).toEqual(1);
     expect(wrapper.find('Main').length).toEqual(1);
@@ -57,15 +57,15 @@ describe('App', () => {
     const wrapper = shallow(<App />, { disableLifecycleMethods: true });
     
     const selectedCard = {
-        Homeworld: "Tatooine",
-        Name: "C-3PO",
-        Population: "200000",
-        Species: "Droid"
-      }
+      Homeworld: "Tatooine",
+      Name: "C-3PO",
+      Population: "200000",
+      Species: "Droid"
+    };
     
-    wrapper.instance().addFavorite(selectedCard)
-    expect(wrapper.state().favorites).toEqual([selectedCard])
-  })
+    wrapper.instance().addFavorite(selectedCard);
+    expect(wrapper.state().favorites).toEqual([selectedCard]);
+  });
 
   it('Should Remove a card from favorites when removeFavorite is called', () => {
     const wrapper = shallow(<App />, { disableLifecycleMethods: true });
@@ -75,12 +75,12 @@ describe('App', () => {
       Name: "C-3PO",
       Population: "200000",
       Species: "Droid"
-    }
+    };
 
-    wrapper.instance().addFavorite(selectedCard)
-    expect(wrapper.state().favorites).toEqual([selectedCard])
+    wrapper.instance().addFavorite(selectedCard);
+    expect(wrapper.state().favorites).toEqual([selectedCard]);
 
-    wrapper.instance().addFavorite(selectedCard)
-    expect(wrapper.state().favorites).toEqual([])
-  })
-})
+    wrapper.instance().addFavorite(selectedCard);
+    expect(wrapper.state().favorites).toEqual([]);
+  });
+});

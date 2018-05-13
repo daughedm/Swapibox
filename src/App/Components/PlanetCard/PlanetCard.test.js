@@ -13,11 +13,11 @@ describe('PlanetCard', () => {
       "climate": "temperate",
       "population": "2000000000",
       "residents": 'Bob'
-    }
+    };
     const addFavorite = jest.fn();
     wrapper = shallow(<PlanetCard item={planet}
       Data="planet"
-      addFavorite={addFavorite} />)
+      addFavorite={addFavorite} />);
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -34,7 +34,7 @@ describe('PlanetCard', () => {
       addFavorite: jest.fn()
     };
 
-    const wrapper = shallow(<PlanetCard {...mockProps} />)
+    const wrapper = shallow(<PlanetCard {...mockProps} />);
 
     wrapper.find('.favorite').simulate('click');
 
@@ -42,4 +42,4 @@ describe('PlanetCard', () => {
     expect(mockProps.addFavorite).toHaveBeenCalledWith(mockProps.Data);
 
   });
-})
+});
