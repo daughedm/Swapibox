@@ -47,15 +47,27 @@ const Main = ({
               addFavorite={ addFavorite }
       />
     })   
+  } else if (currentCategory === 'favorites') {
+    cards = favorites.map((cat, i) => {
+      return <PlanetCard
+        key={currentCategory + [i]}
+        image={planetsImages[i]}
+        currentCategory={currentCategory}
+        Data={favorites[i]}
+        addFavorite={addFavorite}
+      />
+    })   
   }
 
   return (
-    <div className="main">
-      {cards}
+    <div>
+      <h1>{currentCategory}</h1>
+      <div className="main">
+        {cards}
+      </div>
     </div>
   )
 }
-
 Main.propTypes = {
   favorites: PropTypes.array,
   people: PropTypes.array,
@@ -63,5 +75,6 @@ Main.propTypes = {
   currentCategory: PropTypes.string,
   addFavorite: PropTypes.func,
 };
+
 
 export default Main;
