@@ -50,21 +50,18 @@ const Main = ({
   } else if (currentCategory === 'favorites') {
     cards = favorites.map((cat, i) => {
       return <PlanetCard
-        key={currentCategory + [i]}
-        image={planetsImages[i]}
-        currentCategory={currentCategory}
-        Data={favorites[i]}
-        addFavorite={addFavorite}
-      />
+              key={currentCategory + [i]}
+              image={planetsImages[i]}
+              currentCategory={currentCategory}
+              Data={favorites[i]}
+              addFavorite={addFavorite}
+             />
     })   
   }
 
   return (
-    <div>
-      <h1>{currentCategory}</h1>
-      <div className="main">
-        {cards}
-      </div>
+    <div className="main">
+      {cards}
     </div>
   )
 }

@@ -3,5 +3,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
 
+.fade {
+  width: 100%;
+  min-height: 80vh;
+  top: 315px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
 }
