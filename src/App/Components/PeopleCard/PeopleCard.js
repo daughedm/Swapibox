@@ -18,13 +18,13 @@ const PeopleCard = ({ Data, image, addFavorite}) => {
       </div>
       <h3 className="card-header">{Data.name}</h3>
       <h5 className="sub-categories top">Species: 
-        <span className="normal">{Data.species}</span>
+        <span className="normal"> {Data.species}</span>
       </h5>
       <h5 className="sub-categories">Homeworld: 
-        <span className="normal">{Data.homeworld}</span>
+        <span className="normal"> {Data.homeworld}</span>
       </h5>
       <h5 className="sub-categories">Population: 
-        <span className="normal">{Data.population}</span>
+        <span className="normal"> {Data.population}</span>
       </h5>
     </div>
   )

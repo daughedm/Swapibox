@@ -85,8 +85,9 @@ const Main = ({
 }
 Main.propTypes = {
   favorites: PropTypes.array,
-  people: PropTypes.array,
-  planets: PropTypes.array,
+  people: PropTypes.object,
+  planets: PropTypes.object,
+  vehicles: PropTypes.object,
   currentCategory: PropTypes.string,
   addFavorite: PropTypes.func,
 };

@@ -54,7 +54,9 @@ ShallowWrapper {
           Climate:
           <span
                     className="normal"
-          />
+          >
+                     
+          </span>
 </h5>,
         <h5
           className="sub-categories"
@@ -62,7 +64,9 @@ ShallowWrapper {
           Terrain:
           <span
                     className="normal"
-          />
+          >
+                     
+          </span>
 </h5>,
         <h5
           className="sub-categories"
@@ -70,7 +74,9 @@ ShallowWrapper {
           Population:
           <span
                     className="normal"
-          />
+          >
+                     
+          </span>
 </h5>,
         <h5
           className="sub-categories"
@@ -78,7 +84,9 @@ ShallowWrapper {
           Residents:
           <span
                     className="normal"
-          />
+          >
+                     
+          </span>
 </h5>,
       ],
       "className": "card-planet",
@@ -156,7 +164,9 @@ ShallowWrapper {
             "Climate:",
             <span
               className="normal"
-/>,
+>
+               
+</span>,
           ],
           "className": "sub-categories top",
         },
@@ -168,11 +178,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                " ",
+                undefined,
+              ],
               "className": "normal",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
             "type": "span",
           },
         ],
@@ -187,7 +203,9 @@ ShallowWrapper {
             "Terrain:",
             <span
               className="normal"
-/>,
+>
+               
+</span>,
           ],
           "className": "sub-categories",
         },
@@ -199,11 +217,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                " ",
+                undefined,
+              ],
               "className": "normal",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
             "type": "span",
           },
         ],
@@ -218,7 +242,9 @@ ShallowWrapper {
             "Population:",
             <span
               className="normal"
-/>,
+>
+               
+</span>,
           ],
           "className": "sub-categories",
         },
@@ -230,11 +256,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                " ",
+                undefined,
+              ],
               "className": "normal",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
             "type": "span",
           },
         ],
@@ -249,7 +281,9 @@ ShallowWrapper {
             "Residents:",
             <span
               className="normal"
-/>,
+>
+               
+</span>,
           ],
           "className": "sub-categories",
         },
@@ -261,11 +295,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                " ",
+                undefined,
+              ],
               "className": "normal",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
             "type": "span",
           },
         ],
@@ -305,7 +345,9 @@ ShallowWrapper {
             Climate:
             <span
                         className="normal"
-            />
+            >
+                         
+            </span>
 </h5>,
           <h5
             className="sub-categories"
@@ -313,7 +355,9 @@ ShallowWrapper {
             Terrain:
             <span
                         className="normal"
-            />
+            >
+                         
+            </span>
 </h5>,
           <h5
             className="sub-categories"
@@ -321,7 +365,9 @@ ShallowWrapper {
             Population:
             <span
                         className="normal"
-            />
+            >
+                         
+            </span>
 </h5>,
           <h5
             className="sub-categories"
@@ -329,7 +375,9 @@ ShallowWrapper {
             Residents:
             <span
                         className="normal"
-            />
+            >
+                         
+            </span>
 </h5>,
         ],
         "className": "card-planet",
@@ -407,7 +455,9 @@ ShallowWrapper {
               "Climate:",
               <span
                 className="normal"
-/>,
+>
+                 
+</span>,
             ],
             "className": "sub-categories top",
           },
@@ -419,11 +469,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  " ",
+                  undefined,
+                ],
                 "className": "normal",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                " ",
+                undefined,
+              ],
               "type": "span",
             },
           ],
@@ -438,7 +494,9 @@ ShallowWrapper {
               "Terrain:",
               <span
                 className="normal"
-/>,
+>
+                 
+</span>,
             ],
             "className": "sub-categories",
           },
@@ -450,11 +508,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  " ",
+                  undefined,
+                ],
                 "className": "normal",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                " ",
+                undefined,
+              ],
               "type": "span",
             },
           ],
@@ -469,7 +533,9 @@ ShallowWrapper {
               "Population:",
               <span
                 className="normal"
-/>,
+>
+                 
+</span>,
             ],
             "className": "sub-categories",
           },
@@ -481,11 +547,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  " ",
+                  undefined,
+                ],
                 "className": "normal",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                " ",
+                undefined,
+              ],
               "type": "span",
             },
           ],
@@ -500,7 +572,9 @@ ShallowWrapper {
               "Residents:",
               <span
                 className="normal"
-/>,
+>
+                 
+</span>,
             ],
             "className": "sub-categories",
           },
@@ -512,11 +586,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  " ",
+                  undefined,
+                ],
                 "className": "normal",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                " ",
+                undefined,
+              ],
               "type": "span",
             },
           ],
