@@ -8,7 +8,7 @@ const PeopleCard = ({ Data, image, addFavorite}) => {
       <div className={image} alt="person">
         <div 
           className="favorite"
-          onClick={(event) => addFavorite(event.target)}
+          onClick={(event) => addFavorite( Data )}
         >
         </div>
       </div>
@@ -21,7 +21,7 @@ const PeopleCard = ({ Data, image, addFavorite}) => {
 }
 
 PeopleCard.propTypes = {
-  Data: PropTypes.array,
+  Data: PropTypes.object,
   image: PropTypes.string,
   addFavorite: PropTypes.func
 };

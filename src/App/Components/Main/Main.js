@@ -44,7 +44,7 @@ const Main = ({
               key={currentCategory + [i]}
               image={planetsImages[i]}
               currentCategory={currentCategory}
-              addFavorite={ addFavorite}
+              addFavorite={ addFavorite }
       />
     })   
   }

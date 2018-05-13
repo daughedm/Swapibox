@@ -27,7 +27,7 @@ class App extends Component {
     this.setState({ crawl: crawlText });
   };
 
-  addFavorite = (e, selectedCard) => {
+  addFavorite = ( selectedCard ) => {
     const favorites = this.state.favorites;
     const newFavorites = this.updateFavorites(favorites, selectedCard);
     this.setState({favorites: newFavorites})
@@ -35,7 +35,6 @@ class App extends Component {
 
  updateFavorites = (favorites, selectedCard) => {
     const match = favorites.find(item => item === selectedCard);
-    debugger
     selectedCard.favorite = match ? "false" : "true"
 
     return match ? this.removeFavorite(favorites, selectedCard) : [...favorites, selectedCard];
