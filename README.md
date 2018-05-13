@@ -1,6 +1,6 @@
-![Opening Scroll](./images/openingscreen.png)
+![Opening Scroll](./src/Assets/images/openingscreen.png)
 
-![Card View](./images/cardscreen.png)
+![Card View](./src/Assets/images/cardscreen.png)
 
 
 # SwAPI Box
@@ -21,7 +21,7 @@ A step by step series of examples that tell you have to get a development env ru
 Say what the step will be
 
 ```
-Clone the repository (git clone https://github.com/tmcjunkinmarquis/headcount2.0.git).
+Clone the repository (git clone https://github.com/daughedm/Swapibox.git).
 ```
 ```
 npm install
