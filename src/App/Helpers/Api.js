@@ -1,21 +1,21 @@
 import {
   crawlCleaner,
   vehiclesCleaner,
-} from '../Helpers/Cleaner'
+} from '../Helpers/Cleaner';
 
 const crawlFetch = async (url) => {
   const response = await fetch(url);
   const filmsData = await response.json();
   const crawl = crawlCleaner(filmsData);
   return crawl;
-}
+};
 
 const vehiclesFetch = async (url) => {
   const response = await fetch(url);
   const vehiclesData = await response.json();
   const cleanedVehiclesData = vehiclesCleaner(vehiclesData);
   return cleanedVehiclesData;
-}
+};
 
 const peopleFetch = async (url) => {
   const response = await fetch(url);
@@ -32,14 +32,14 @@ const peopleFetch = async (url) => {
       population: homeworldData.population,
       homeworld: homeworldData.name,
       species: specieData.name
-    }
+    };
 
-    const newpeopleObj = Object.assign({}, peopleData.results[i], selectedHWData)
+    const newpeopleObj = Object.assign({}, peopleData.results[i], selectedHWData);
     return newpeopleObj;
-  })
+  });
 
   return Promise.all(homeworldFetch);
-}
+};
 
 const planetsFetch = async (url) => {
   const response = await fetch(url);
@@ -48,8 +48,8 @@ const planetsFetch = async (url) => {
   const planetInfo = planetsData.results.map(async (planet) => {
     const residentsInfo = planet.residents.map(async (resident) => {
 
-      return await residentsFetch(resident)
-    })
+      return await residentsFetch(resident);
+    });
     const residentNames = await Promise.all(residentsInfo);
     return {
       residents: residentNames.length ? residentNames.join(', ') : 'unknown',
@@ -57,20 +57,20 @@ const planetsFetch = async (url) => {
       terrain: planet.terrain,
       climate: planet.climate,
       name: planet.name
-    }
-  })
+    };
+  });
   return Promise.all(planetInfo);
-}
+};
 
 const residentsFetch = async (residentUrl) => {
-  const residentResponse = await fetch(residentUrl)
+  const residentResponse = await fetch(residentUrl);
   const residentsApi = await residentResponse.json();
-  return await residentsApi.name
-}
+  return await residentsApi.name;
+};
 
 export {
   crawlFetch,
   vehiclesFetch,
   planetsFetch,
   peopleFetch
-}
+};

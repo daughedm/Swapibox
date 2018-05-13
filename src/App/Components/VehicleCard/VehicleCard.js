@@ -8,7 +8,7 @@ const VehicleCard = ({ Data, image, addFavorite }) => {
     <div className="card" >
       <div className={image} alt="vehicle">
         <div className="favorite"
-          onClick={(event) => addFavorite(Data)}>
+          onClick={() => addFavorite(Data)}>
           <img className="fav-icon" src={heart} alt="favorite" />
         </div>
 
@@ -24,8 +24,8 @@ const VehicleCard = ({ Data, image, addFavorite }) => {
         <span className="normal"> {Data.passengers}</span>
       </h5>
     </div>
-  )
-}
+  );
+};
 
 VehicleCard.propTypes = {
   Data: PropTypes.object,

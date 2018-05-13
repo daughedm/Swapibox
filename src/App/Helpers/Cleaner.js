@@ -5,10 +5,10 @@ const crawlCleaner = (rawData) => {
       title: film.title, 
       episode_id: film.episode_id, 
       opening_crawl: film.opening_crawl 
-    }
-  })
+    };
+  });
   return cleanCrawlData[randNum];
-}
+};
 
 const peopleCleaner = (rawData) => {
   const cleanPeopleData = rawData.map(person => {
@@ -17,10 +17,10 @@ const peopleCleaner = (rawData) => {
       homeworld: person.homeworld,
       species: person.species,
       population: person.population
-    }
-  })
+    };
+  });
   return cleanPeopleData;
-}
+};
 
 const planetsCleaner = (rawData) => {
   const cleanPlanetsData = rawData.results.map(planet => {
@@ -30,10 +30,10 @@ const planetsCleaner = (rawData) => {
       population: planet.population,
       climate: planet.climate,
       residents: planet.residents
-    }
-  })
+    };
+  });
   return cleanPlanetsData;
-}
+};
 
 const vehiclesCleaner = (rawData) => {
   const cleanVehiclesData = rawData.results.map(vehicle => {
@@ -42,10 +42,10 @@ const vehiclesCleaner = (rawData) => {
       model: vehicle.model,
       vehicle_class: vehicle.vehicle_class,
       passengers: vehicle.passengers
-    }
-  })
+    };
+  });
   return cleanVehiclesData;
-}
+};
 
 export { 
   crawlCleaner, 

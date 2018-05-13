@@ -11,11 +11,11 @@ describe('PeopleCard', () => {
       "name": "Luke Skywalker",
       "homeworld": "Alderaan",
       "species": "Human"
-    }
+    };
     const addFavorite = jest.fn();
     wrapper = shallow(<PeopleCard item={person}
       Data="person"
-      addFavorite={addFavorite} />)
+      addFavorite={addFavorite} />);
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -30,7 +30,7 @@ describe('PeopleCard', () => {
       addFavorite: jest.fn()
     };
   
-    const wrapper = shallow(<PeopleCard {...mockProps} />)
+    const wrapper = shallow(<PeopleCard {...mockProps} />);
     
     wrapper.find('.favorite').simulate('click');
     
@@ -38,4 +38,4 @@ describe('PeopleCard', () => {
     expect(mockProps.addFavorite).toHaveBeenCalledWith(mockProps.Data);
 
   });
-})
+});
