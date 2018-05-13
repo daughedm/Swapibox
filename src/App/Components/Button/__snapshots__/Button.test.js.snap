@@ -28,6 +28,7 @@ ShallowWrapper {
       "children": Array [
         <div
           className="button-container"
+          id="people-button"
           onClick={[Function]}
           type="button"
 >
@@ -48,6 +49,7 @@ ShallowWrapper {
 </div>,
         <div
           className="button-container"
+          id="planet-button"
           onClick={[Function]}
           type="button"
 >
@@ -68,6 +70,7 @@ ShallowWrapper {
 </div>,
         <div
           className="button-container"
+          id="vehicle-button"
           onClick={[Function]}
           type="button"
 >
@@ -88,6 +91,7 @@ ShallowWrapper {
 </div>,
         <div
           className="button-container divider"
+          id="favorite-button"
           onClick={[Function]}
 >
           <div
@@ -132,6 +136,7 @@ ShallowWrapper {
 </h2>,
           ],
           "className": "button-container",
+          "id": "people-button",
           "onClick": [Function],
           "type": "button",
         },
@@ -202,6 +207,7 @@ ShallowWrapper {
 </h2>,
           ],
           "className": "button-container",
+          "id": "planet-button",
           "onClick": [Function],
           "type": "button",
         },
@@ -272,6 +278,7 @@ ShallowWrapper {
 </h2>,
           ],
           "className": "button-container",
+          "id": "vehicle-button",
           "onClick": [Function],
           "type": "button",
         },
@@ -342,6 +349,7 @@ ShallowWrapper {
 </h2>,
           ],
           "className": "button-container divider",
+          "id": "favorite-button",
           "onClick": [Function],
         },
         "ref": null,
@@ -400,6 +408,7 @@ ShallowWrapper {
         "children": Array [
           <div
             className="button-container"
+            id="people-button"
             onClick={[Function]}
             type="button"
 >
@@ -420,6 +429,7 @@ ShallowWrapper {
 </div>,
           <div
             className="button-container"
+            id="planet-button"
             onClick={[Function]}
             type="button"
 >
@@ -440,6 +450,7 @@ ShallowWrapper {
 </div>,
           <div
             className="button-container"
+            id="vehicle-button"
             onClick={[Function]}
             type="button"
 >
@@ -460,6 +471,7 @@ ShallowWrapper {
 </div>,
           <div
             className="button-container divider"
+            id="favorite-button"
             onClick={[Function]}
 >
             <div
@@ -504,6 +516,7 @@ ShallowWrapper {
 </h2>,
             ],
             "className": "button-container",
+            "id": "people-button",
             "onClick": [Function],
             "type": "button",
           },
@@ -574,6 +587,7 @@ ShallowWrapper {
 </h2>,
             ],
             "className": "button-container",
+            "id": "planet-button",
             "onClick": [Function],
             "type": "button",
           },
@@ -644,6 +658,7 @@ ShallowWrapper {
 </h2>,
             ],
             "className": "button-container",
+            "id": "vehicle-button",
             "onClick": [Function],
             "type": "button",
           },
@@ -714,6 +729,7 @@ ShallowWrapper {
 </h2>,
             ],
             "className": "button-container divider",
+            "id": "favorite-button",
             "onClick": [Function],
           },
           "ref": null,

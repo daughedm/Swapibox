@@ -13,8 +13,8 @@ describe('Main', () => {
     wrapper = shallow(<Navigation
       category="people"
       handleClick={handleClick}
-      favorites={favorites} />)
+      favorites={favorites} />);
 
     expect(wrapper).toMatchSnapshot();
   });
-})
+});

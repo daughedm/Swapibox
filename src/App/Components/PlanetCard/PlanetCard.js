@@ -6,13 +6,16 @@ import PropTypes from 'prop-types';
 const PlanetCard = ({ Data, image, addFavorite }) => {
   return (
     <div className="card-planet" >
-      <div  className={image} 
-            alt="planet">
-        <div  className="favorite"
-              onClick={(event) => addFavorite(Data)}>
-          <img  className="fav-icon" 
-                src={heart} 
-                alt="favorite" />
+      <div  
+        className={image} 
+        alt="planet">
+        <div  
+          className="favorite"
+          onClick={() => addFavorite(Data)}>
+          <img  
+            className="fav-icon" 
+            src={heart} 
+            alt="favorite" />
         </div>
       </div>
       <h3 className="card-header">{Data.name}</h3>
@@ -29,11 +32,11 @@ const PlanetCard = ({ Data, image, addFavorite }) => {
         <span className="normal"> {Data.residents}</span>
       </h5>
     </div>
-  )
-}
+  );
+};
 
 PlanetCard.propTypes = {
-  Data: PropTypes.string,
+  Data: PropTypes.object,
   image: PropTypes.string,
   addFavorite: PropTypes.func
 };

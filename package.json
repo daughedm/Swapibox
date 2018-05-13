@@ -10,6 +10,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "eslint": "./node_modules/eslint/bin/eslint.js ./lib/*.js",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
@@ -18,8 +19,10 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
     "jest": "^22.4.3"
   }
 }
