@@ -49,6 +49,7 @@ const Main = ({
     })   
   } else if (currentCategory === 'favorites') {
     cards = favorites.map((cat, i) => {
+      if(cat.terrain) {
       return <PlanetCard
               key={currentCategory + [i]}
               image={planetsImages[i]}
@@ -56,6 +57,23 @@ const Main = ({
               Data={favorites[i]}
               addFavorite={addFavorite}
              />
+      } else if (cat.homeworld) {
+        return <PeopleCard
+          key={currentCategory + [i]}
+          image={peopleImages[i]}
+          currentCategory={currentCategory}
+          Data={favorites[i]}
+          addFavorite={addFavorite}
+        />
+      } else if (cat.model) {
+        return <VehicleCard
+          key={currentCategory + [i]}
+          image={vehicleImages[i]}
+          currentCategory={currentCategory}
+          Data={favorites[i]}
+          addFavorite={addFavorite}
+        />
+      }
     })   
   }
 
