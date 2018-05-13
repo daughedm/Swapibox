@@ -1,6 +1,6 @@
-![Opening Scroll](./src/Assets/images/openingscreen)
+![Opening Scroll](./src/Assets/images/openingscreen.png)
 
-![Card View](./src/Assets/images/cardscreen)
+![Card View](./src/Assets/images/cardscreen.png)
 
 
 # SwAPI Box
