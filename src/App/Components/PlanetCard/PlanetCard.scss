@@ -1,3 +1,5 @@
+$sw-yellow: rgb(246, 231, 48);
+
 .card-planet {
   background-color: white;
   width: 250px;
@@ -37,8 +39,18 @@
 .favorite {
   width: 40px;
   height: 40px;
-  border: 2px solid $sw-yellow;
+  border: 2px solid #f6e730;
 }
+
+.fav-icon {
+  cursor: pointer;
+}
+
+.fav-icon :hover {
+  background-color: $sw-yellow;
+  
+}
+
 .planets0 {
   width: 100%;
   height: 140px;
