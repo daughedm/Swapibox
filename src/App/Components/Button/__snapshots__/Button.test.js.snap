@@ -27,6 +27,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
+          className="button-container"
           id="people-button"
           onClick={[Function]}
           type="button"
@@ -134,6 +135,7 @@ ShallowWrapper {
               PEOPLE
 </h2>,
           ],
+          "className": "button-container",
           "id": "people-button",
           "onClick": [Function],
           "type": "button",
@@ -405,6 +407,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
+            className="button-container"
             id="people-button"
             onClick={[Function]}
             type="button"
@@ -512,6 +515,7 @@ ShallowWrapper {
                 PEOPLE
 </h2>,
             ],
+            "className": "button-container",
             "id": "people-button",
             "onClick": [Function],
             "type": "button",

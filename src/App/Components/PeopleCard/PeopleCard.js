@@ -9,11 +9,12 @@ const PeopleCard = ({ Data, image, addFavorite}) => {
       <div className={image} alt="person">
         <div 
           className="favorite"
-          onClick={(event) => addFavorite( Data )}
+          onClick={() => addFavorite( Data )}
         >
-          <img  className="fav-icon" 
-                src={heart} 
-                alt="favorite" />
+          <img  
+            className="fav-icon" 
+            src={heart} 
+            alt="favorite" />
         </div>
       </div>
       <h3 className="card-header">{Data.name}</h3>

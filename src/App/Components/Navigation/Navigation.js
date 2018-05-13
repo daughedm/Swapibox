@@ -13,8 +13,8 @@ const Navigation = ({ handleClick, favorites }) => {
         handleClick={handleClick}
         favorites={favorites}/>
     </div>
-  )
-}
+  );
+};
 
 Navigation.propTypes = {
   handleClick: PropTypes.func,

@@ -19,8 +19,8 @@ const OpeningScroll = ({crawl}) => {
       </section>
       <audio src={soundtrack} autoPlay="true" />
     </div>
-  )
-}
+  );
+};
 
 OpeningScroll.propTypes = {
   crawl: PropTypes.object

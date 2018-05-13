@@ -18,45 +18,45 @@ const Main = ({
   const planetsImages = ['planets0', 'planets1', 'planets2', 'planets3', 'planets4', 'planets5', 'planets6', 'planets7', 'planets8', 'planets9'];
   let cards;
   if(currentCategory === 'people'){
-  cards = people.map((cat, i) => {
+    cards = people.map((cat, i) => {
       return <PeopleCard 
-              Data={people[i]}
-              key={currentCategory+[i]}
-              image={peopleImages[i]}
-              currentCategory={currentCategory}
-              addFavorite={addFavorite}
-              />
-    }) 
+        Data={people[i]}
+        key={currentCategory+[i]}
+        image={peopleImages[i]}
+        currentCategory={currentCategory}
+        addFavorite={addFavorite}
+      />;
+    }); 
   } else if (currentCategory === 'vehicles'){
     cards = vehicles.map((cat, i) => {
       return <VehicleCard
-              Data={vehicles[i]}
-              key={currentCategory + [i]}
-              image={vehicleImages[i]}
-              currentCategory={currentCategory}
-              addFavorite={addFavorite}
-            />
-    }) 
+        Data={vehicles[i]}
+        key={currentCategory + [i]}
+        image={vehicleImages[i]}
+        currentCategory={currentCategory}
+        addFavorite={addFavorite}
+      />;
+    }); 
   } else if (currentCategory === 'planets'){
     cards = planets.map((cat, i) => {
       return <PlanetCard
-              Data={planets[i]}
-              key={currentCategory + [i]}
-              image={planetsImages[i]}
-              currentCategory={currentCategory}
-              addFavorite={ addFavorite }
-      />
-    })   
+        Data={planets[i]}
+        key={currentCategory + [i]}
+        image={planetsImages[i]}
+        currentCategory={currentCategory}
+        addFavorite={ addFavorite }
+      />;
+    });   
   } else if (currentCategory === 'favorites') {
     cards = favorites.map((cat, i) => {
       if(cat.terrain) {
-      return <PlanetCard
-              key={currentCategory + [i]}
-              image={planetsImages[i]}
-              currentCategory={currentCategory}
-              Data={favorites[i]}
-              addFavorite={addFavorite}
-             />
+        return <PlanetCard
+          key={currentCategory + [i]}
+          image={planetsImages[i]}
+          currentCategory={currentCategory}
+          Data={favorites[i]}
+          addFavorite={addFavorite}
+        />;
       } else if (cat.homeworld) {
         return <PeopleCard
           key={currentCategory + [i]}
@@ -64,7 +64,7 @@ const Main = ({
           currentCategory={currentCategory}
           Data={favorites[i]}
           addFavorite={addFavorite}
-        />
+        />;
       } else if (cat.model) {
         return <VehicleCard
           key={currentCategory + [i]}
@@ -72,22 +72,22 @@ const Main = ({
           currentCategory={currentCategory}
           Data={favorites[i]}
           addFavorite={addFavorite}
-        />
+        />;
       }
-    })   
+    });   
   }
 
   return (
     <div className="main">
       {cards}
     </div>
-  )
-}
+  );
+};
 Main.propTypes = {
   favorites: PropTypes.array,
-  people: PropTypes.object,
-  planets: PropTypes.object,
-  vehicles: PropTypes.object,
+  people: PropTypes.array,
+  planets: PropTypes.array,
+  vehicles: PropTypes.array,
   currentCategory: PropTypes.string,
   addFavorite: PropTypes.func,
 };

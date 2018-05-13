@@ -14,8 +14,8 @@ describe('Main', () => {
     };
 
     wrapper = shallow(<OpeningScroll
-      crawl={crawl} />)
+      crawl={crawl} />);
 
     expect(wrapper).toMatchSnapshot();
   });
-})
+});

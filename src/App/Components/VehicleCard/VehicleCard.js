@@ -28,7 +28,7 @@ const VehicleCard = ({ Data, image, addFavorite }) => {
 }
 
 VehicleCard.propTypes = {
-  Data: PropTypes.string,
+  Data: PropTypes.object,
   image: PropTypes.string,
   addFavorite: PropTypes.func
 };
