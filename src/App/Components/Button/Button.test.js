@@ -17,4 +17,68 @@ describe('Button', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should call handleClick on people button with the correct props', () => {
+    let mockProps = {
+      category: 'people',
+      handleClick: jest.fn(),
+      favorites: ['mock', 'favorites']
+    };
+
+    const wrapper = shallow(<Button {...mockProps} />)
+
+    wrapper.find('#people-button').simulate('click');
+
+    expect(mockProps.handleClick).toHaveBeenCalledTimes(1);
+    expect(mockProps.handleClick).toHaveBeenCalledWith(mockProps.category);
+
+  });
+
+  it('should call handleClick on vehicles button with the correct props', () => {
+    let mockProps = {
+      category: 'vehicles',
+      handleClick: jest.fn(),
+      favorites: ['mock', 'favorites']
+    };
+
+    const wrapper = shallow(<Button {...mockProps} />)
+
+    wrapper.find('#vehicle-button').simulate('click');
+
+    expect(mockProps.handleClick).toHaveBeenCalledTimes(1);
+    expect(mockProps.handleClick).toHaveBeenCalledWith(mockProps.category);
+
+  });
+
+  it('should call handleClick on planets button with the correct props', () => {
+    let mockProps = {
+      category: 'planets',
+      handleClick: jest.fn(),
+      favorites: ['mock', 'favorites']
+    };
+
+    const wrapper = shallow(<Button {...mockProps} />)
+
+    wrapper.find('#planet-button').simulate('click');
+
+    expect(mockProps.handleClick).toHaveBeenCalledTimes(1);
+    expect(mockProps.handleClick).toHaveBeenCalledWith(mockProps.category);
+
+  });
+
+  it('should call handleClick on favorites button with the correct props', () => {
+    let mockProps = {
+      category: 'favorites',
+      handleClick: jest.fn(),
+      favorites: ['mock', 'favorites']
+    };
+
+    const wrapper = shallow(<Button {...mockProps} />)
+
+    wrapper.find('#favorite-button').simulate('click');
+
+    expect(mockProps.handleClick).toHaveBeenCalledTimes(1);
+    expect(mockProps.handleClick).toHaveBeenCalledWith(mockProps.category);
+
+  });
 })

@@ -7,4 +7,8 @@ describe('App', () => {
     const wrapper = shallow(<App />, { disableLifecycleMethods: true })
     expect(wrapper).toMatchSnapshot();
   });
+
+
+
+  
 })

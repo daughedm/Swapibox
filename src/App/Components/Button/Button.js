@@ -10,7 +10,7 @@ const Button = ({ handleClick, category, favorites }) => {
   return (
     <div className="buttons-wrapper" >
       <div 
-        className="button-container" 
+        id="people-button"
         onClick={() => handleClick('people')} 
         type="button" 
       >
@@ -23,6 +23,7 @@ const Button = ({ handleClick, category, favorites }) => {
         <h2 className="btnTitle">PEOPLE</h2>
       </div>
       <div 
+        id="planet-button"
         className="button-container" 
         onClick={() => handleClick('planets')} 
         type="button">
@@ -35,6 +36,7 @@ const Button = ({ handleClick, category, favorites }) => {
         <h2 className="btnTitle">PLANETS</h2>
       </div>
       <div 
+        id="vehicle-button"
         className="button-container" 
         onClick={() => handleClick('vehicles')} 
         type="button">
@@ -47,6 +49,7 @@ const Button = ({ handleClick, category, favorites }) => {
         <h2 className="btnTitle">VEHICLES</h2>
       </div>
       <div 
+        id="favorite-button"
         className="button-container divider"
         onClick={() => handleClick('favorites')}
         >
