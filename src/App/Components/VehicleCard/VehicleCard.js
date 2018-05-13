@@ -15,20 +15,20 @@ const VehicleCard = ({ Data, image, addFavorite }) => {
       </div>
       <h3 className="card-header">{Data.name}</h3>
       <h5 className="sub-categories top">Model:
-        <span className="normal">{Data.model}</span>
+        <span className="normal"> {Data.model}</span>
       </h5>
       <h5 className="sub-categories">Class:
-        <span className="normal">{Data.vehicle_class}</span>
+        <span className="normal"> {Data.vehicle_class}</span>
       </h5>
       <h5 className="sub-categories">Passengers:
-        <span className="normal">{Data.passengers}</span>
+        <span className="normal"> {Data.passengers}</span>
       </h5>
     </div>
   )
 }
 
 VehicleCard.propTypes = {
-  Data: PropTypes.object,
+  Data: PropTypes.string,
   image: PropTypes.string,
   addFavorite: PropTypes.func
 };

@@ -19,4 +19,24 @@ describe('VehicleCard', () => {
 
     expect(wrapper).toMatchSnapshot();
   })
+
+  it('should call addFavorite on click with the correct props', () => {
+    let mockProps = {
+      Data: {
+        "name": "Sand Crawler",
+        "model": "Digger Crawler",
+        "vehicleClass": "wheeled",
+        "passengers": 30
+      },
+      addFavorite: jest.fn()
+    };
+
+    const wrapper = shallow(<VehicleCard {...mockProps} />)
+
+    wrapper.find('.favorite').simulate('click');
+
+    expect(mockProps.addFavorite).toHaveBeenCalledTimes(1);
+    expect(mockProps.addFavorite).toHaveBeenCalledWith(mockProps.Data);
+
+  });
 })

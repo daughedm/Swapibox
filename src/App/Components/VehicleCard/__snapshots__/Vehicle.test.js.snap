@@ -53,7 +53,9 @@ ShallowWrapper {
           Model:
           <span
                     className="normal"
-          />
+          >
+                     
+          </span>
 </h5>,
         <h5
           className="sub-categories"
@@ -61,7 +63,9 @@ ShallowWrapper {
           Class:
           <span
                     className="normal"
-          />
+          >
+                     
+          </span>
 </h5>,
         <h5
           className="sub-categories"
@@ -69,7 +73,9 @@ ShallowWrapper {
           Passengers:
           <span
                     className="normal"
-          />
+          >
+                     
+          </span>
 </h5>,
       ],
       "className": "card",
@@ -147,7 +153,9 @@ ShallowWrapper {
             "Model:",
             <span
               className="normal"
-/>,
+>
+               
+</span>,
           ],
           "className": "sub-categories top",
         },
@@ -159,11 +167,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                " ",
+                undefined,
+              ],
               "className": "normal",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
             "type": "span",
           },
         ],
@@ -178,7 +192,9 @@ ShallowWrapper {
             "Class:",
             <span
               className="normal"
-/>,
+>
+               
+</span>,
           ],
           "className": "sub-categories",
         },
@@ -190,11 +206,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                " ",
+                undefined,
+              ],
               "className": "normal",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
             "type": "span",
           },
         ],
@@ -209,7 +231,9 @@ ShallowWrapper {
             "Passengers:",
             <span
               className="normal"
-/>,
+>
+               
+</span>,
           ],
           "className": "sub-categories",
         },
@@ -221,11 +245,17 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                " ",
+                undefined,
+              ],
               "className": "normal",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              " ",
+              undefined,
+            ],
             "type": "span",
           },
         ],
@@ -265,7 +295,9 @@ ShallowWrapper {
             Model:
             <span
                         className="normal"
-            />
+            >
+                         
+            </span>
 </h5>,
           <h5
             className="sub-categories"
@@ -273,7 +305,9 @@ ShallowWrapper {
             Class:
             <span
                         className="normal"
-            />
+            >
+                         
+            </span>
 </h5>,
           <h5
             className="sub-categories"
@@ -281,7 +315,9 @@ ShallowWrapper {
             Passengers:
             <span
                         className="normal"
-            />
+            >
+                         
+            </span>
 </h5>,
         ],
         "className": "card",
@@ -359,7 +395,9 @@ ShallowWrapper {
               "Model:",
               <span
                 className="normal"
-/>,
+>
+                 
+</span>,
             ],
             "className": "sub-categories top",
           },
@@ -371,11 +409,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  " ",
+                  undefined,
+                ],
                 "className": "normal",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                " ",
+                undefined,
+              ],
               "type": "span",
             },
           ],
@@ -390,7 +434,9 @@ ShallowWrapper {
               "Class:",
               <span
                 className="normal"
-/>,
+>
+                 
+</span>,
             ],
             "className": "sub-categories",
           },
@@ -402,11 +448,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  " ",
+                  undefined,
+                ],
                 "className": "normal",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                " ",
+                undefined,
+              ],
               "type": "span",
             },
           ],
@@ -421,7 +473,9 @@ ShallowWrapper {
               "Passengers:",
               <span
                 className="normal"
-/>,
+>
+                 
+</span>,
             ],
             "className": "sub-categories",
           },
@@ -433,11 +487,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  " ",
+                  undefined,
+                ],
                 "className": "normal",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                " ",
+                undefined,
+              ],
               "type": "span",
             },
           ],

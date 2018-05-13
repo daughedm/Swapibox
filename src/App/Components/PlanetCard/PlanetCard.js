@@ -17,23 +17,23 @@ const PlanetCard = ({ Data, image, addFavorite }) => {
       </div>
       <h3 className="card-header">{Data.name}</h3>
       <h5 className="sub-categories top">Climate: 
-        <span className="normal">{Data.climate}</span>
+        <span className="normal"> {Data.climate}</span>
       </h5>
       <h5 className="sub-categories">Terrain: 
-        <span className="normal">{Data.terrain}</span>
+        <span className="normal"> {Data.terrain}</span>
       </h5>
       <h5 className="sub-categories">Population: 
-        <span className="normal">{Data.population}</span>
+        <span className="normal"> {Data.population}</span>
       </h5>
       <h5 className="sub-categories">Residents: 
-        <span className="normal">{Data.residents}</span>
+        <span className="normal"> {Data.residents}</span>
       </h5>
     </div>
   )
 }
 
 PlanetCard.propTypes = {
-  Data: PropTypes.object,
+  Data: PropTypes.string,
   image: PropTypes.string,
   addFavorite: PropTypes.func
 };
