@@ -17,7 +17,7 @@ class App extends Component {
       vehicles: [],
       people:[],
       planets: [],
-      crawl: []
+      crawl: {}
     }
   }
 
@@ -27,9 +27,20 @@ class App extends Component {
     this.setState({ crawl: crawlText });
   };
 
-  addFavorite = (e, cat) => {
-    
+  addFavorite = ( selectedCard ) => {
+    const favorites = this.state.favorites;
+    const newFavorites = this.updateFavorites(favorites, selectedCard);
+    this.setState({favorites: newFavorites})
   }
+
+ updateFavorites = (favorites, selectedCard) => {
+    const match = favorites.find(item => item === selectedCard);
+    selectedCard.favorite = match ? "false" : "true"
+
+    return match ? this.removeFavorite(favorites, selectedCard) : [...favorites, selectedCard];
+  }
+
+  removeFavorite = (favoritesList, card) => favoritesList.filter(item => item !== card);
 
   handleClick = async (category) => {
     const vehicleUrl = 'https://swapi.co/api/vehicles/';
@@ -66,7 +77,6 @@ class App extends Component {
     }
   }
 
-
   render() {
     const onLandingPage = this.state.onLandingPage;
     return (
@@ -84,6 +94,7 @@ class App extends Component {
               people={this.state.people}
               planets={this.state.planets} 
               currentCategory={this.state.currentCategory}
+              addFavorite={this.addFavorite}
             />
       )}
       </div>

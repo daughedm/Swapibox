@@ -3,6 +3,7 @@ import Vader from '../../../Assets/Images/vader.svg';
 import DeathStar from '../../../Assets/Images/deathstar.svg';
 import Falcon from '../../../Assets/Images/falcon.svg';
 import '../Button/Button.css';
+import PropTypes from 'prop-types';
 
 const Button = ({ handleClick, category, favorites }) => {
 
@@ -45,7 +46,10 @@ const Button = ({ handleClick, category, favorites }) => {
         </div>
         <h2 className="btnTitle">VEHICLES</h2>
       </div>
-      <div className="button-container divider">
+      <div 
+        className="button-container divider"
+        onClick={() => handleClick('favorites')}
+        >
         <div className="circle filled">
           <h3 className="favorite-number">{favorites.length ? favorites.length : 0}</h3>
         </div>
@@ -54,5 +58,11 @@ const Button = ({ handleClick, category, favorites }) => {
     </div>
   )
 }
+
+Button.propTypes = {
+  handleClick: PropTypes.func,
+  category: PropTypes.string,
+  favorites: PropTypes.array
+};
 
 export default Button;

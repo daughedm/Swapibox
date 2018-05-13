@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VehicleCard should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <VehicleCard
+    Data="vehicle"
+    addFavorite={[Function]}
+    item={
+        Object {
+            "model": "Digger Crawler",
+            "name": "Sand Crawler",
+            "passengers": 30,
+            "vehicleClass": "wheeled",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          alt="vehicle"
+          className={undefined}
+>
+          <div
+                    className="favorite"
+          />
+</div>,
+        <h3
+          className="card-header"
+/>,
+        <h5
+          className="sub-categories top"
+>
+          Model: 
+          <span
+                    className="normal"
+          />
+</h5>,
+        <h5
+          className="sub-categories"
+>
+          Class: 
+          <span
+                    className="normal"
+          />
+</h5>,
+        <h5
+          className="sub-categories"
+>
+          Passengers: 
+          <span
+                    className="normal"
+          />
+</h5>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "vehicle",
+          "children": <div
+            className="favorite"
+/>,
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "favorite",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "card-header",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Model: ",
+            <span
+              className="normal"
+/>,
+          ],
+          "className": "sub-categories top",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Model: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "normal",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Class: ",
+            <span
+              className="normal"
+/>,
+          ],
+          "className": "sub-categories",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Class: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "normal",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Passengers: ",
+            <span
+              className="normal"
+/>,
+          ],
+          "className": "sub-categories",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Passengers: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "normal",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "h5",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            alt="vehicle"
+            className={undefined}
+>
+            <div
+                        className="favorite"
+            />
+</div>,
+          <h3
+            className="card-header"
+/>,
+          <h5
+            className="sub-categories top"
+>
+            Model: 
+            <span
+                        className="normal"
+            />
+</h5>,
+          <h5
+            className="sub-categories"
+>
+            Class: 
+            <span
+                        className="normal"
+            />
+</h5>,
+          <h5
+            className="sub-categories"
+>
+            Passengers: 
+            <span
+                        className="normal"
+            />
+</h5>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "vehicle",
+            "children": <div
+              className="favorite"
+/>,
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "favorite",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "card-header",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Model: ",
+              <span
+                className="normal"
+/>,
+            ],
+            "className": "sub-categories top",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Model: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "normal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Class: ",
+              <span
+                className="normal"
+/>,
+            ],
+            "className": "sub-categories",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Class: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "normal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Passengers: ",
+              <span
+                className="normal"
+/>,
+            ],
+            "className": "sub-categories",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Passengers: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "normal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "h5",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

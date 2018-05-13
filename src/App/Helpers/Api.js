@@ -1,8 +1,6 @@
 import {
   crawlCleaner,
-  peopleCleaner,
   vehiclesCleaner,
-  planetsCleaner
 } from '../Helpers/Cleaner'
 
 const crawlFetch = async (url) => {

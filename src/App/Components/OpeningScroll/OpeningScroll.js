@@ -1,8 +1,9 @@
 import React from 'react';
-import '../OpeningScroll/OpeningScroll.css'
-import soundtrack from '../../../Assets/Audio/star-wars-theme-song.mp3'
+import '../OpeningScroll/OpeningScroll.css';
+import soundtrack from '../../../Assets/Audio/star-wars-theme-song.mp3';
+import PropTypes from 'prop-types';
 
-const OpeningScroll = (props) => {
+const OpeningScroll = ({crawl}) => {
 
   return (
     <div className="scroll" >
@@ -10,15 +11,19 @@ const OpeningScroll = (props) => {
       <section className="star-wars">
         <div className="crawl">
           <div className="title">
-            <p>Episode { props.crawl.episode_id }</p>
-            <h1>{props.crawl.title}</h1>
+            <p>Episode { crawl.episode_id }</p>
+            <h1>{crawl.title}</h1>
           </div>
-          <p>{props.crawl.opening_crawl}</p>
+          <p>{crawl.opening_crawl}</p>
         </div>
       </section>
       <audio src={soundtrack} autoPlay="true" />
     </div>
   )
 }
+
+OpeningScroll.propTypes = {
+  crawl: PropTypes.object
+};
 
 export default OpeningScroll;

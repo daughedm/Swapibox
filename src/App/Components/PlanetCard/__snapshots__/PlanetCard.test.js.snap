@@ -1,0 +1,473 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlanetCard should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PlanetCard
+    Data="planet"
+    addFavorite={[Function]}
+    item={
+        Object {
+            "climate": "temperate",
+            "name": "Alderaan",
+            "population": "2000000000",
+            "residents": "Bob",
+            "terrain": "grasslands, mountains",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          alt="planet"
+          className={undefined}
+>
+          <div
+                    className="favorite"
+          />
+</div>,
+        <h3
+          className="card-header"
+/>,
+        <h5
+          className="sub-categories top"
+>
+          Climate: 
+          <span
+                    className="normal"
+          />
+</h5>,
+        <h5
+          className="sub-categories"
+>
+          Terrain: 
+          <span
+                    className="normal"
+          />
+</h5>,
+        <h5
+          className="sub-categories"
+>
+          Population: 
+          <span
+                    className="normal"
+          />
+</h5>,
+        <h5
+          className="sub-categories"
+>
+          Residents: 
+          <span
+                    className="normal"
+          />
+</h5>,
+      ],
+      "className": "card-planet",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "planet",
+          "children": <div
+            className="favorite"
+/>,
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "favorite",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "card-header",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Climate: ",
+            <span
+              className="normal"
+/>,
+          ],
+          "className": "sub-categories top",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Climate: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "normal",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Terrain: ",
+            <span
+              className="normal"
+/>,
+          ],
+          "className": "sub-categories",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Terrain: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "normal",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Population: ",
+            <span
+              className="normal"
+/>,
+          ],
+          "className": "sub-categories",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Population: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "normal",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Residents: ",
+            <span
+              className="normal"
+/>,
+          ],
+          "className": "sub-categories",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Residents: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "normal",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "h5",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            alt="planet"
+            className={undefined}
+>
+            <div
+                        className="favorite"
+            />
+</div>,
+          <h3
+            className="card-header"
+/>,
+          <h5
+            className="sub-categories top"
+>
+            Climate: 
+            <span
+                        className="normal"
+            />
+</h5>,
+          <h5
+            className="sub-categories"
+>
+            Terrain: 
+            <span
+                        className="normal"
+            />
+</h5>,
+          <h5
+            className="sub-categories"
+>
+            Population: 
+            <span
+                        className="normal"
+            />
+</h5>,
+          <h5
+            className="sub-categories"
+>
+            Residents: 
+            <span
+                        className="normal"
+            />
+</h5>,
+        ],
+        "className": "card-planet",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "planet",
+            "children": <div
+              className="favorite"
+/>,
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "favorite",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "card-header",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Climate: ",
+              <span
+                className="normal"
+/>,
+            ],
+            "className": "sub-categories top",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Climate: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "normal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Terrain: ",
+              <span
+                className="normal"
+/>,
+            ],
+            "className": "sub-categories",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Terrain: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "normal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Population: ",
+              <span
+                className="normal"
+/>,
+            ],
+            "className": "sub-categories",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Population: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "normal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Residents: ",
+              <span
+                className="normal"
+/>,
+            ],
+            "className": "sub-categories",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Residents: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "normal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "h5",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

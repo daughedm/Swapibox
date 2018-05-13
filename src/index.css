@@ -1,4 +1,9 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background-image: url(./Assets/Images/star-bg.jpg);
   background-repeat: repeat;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box; }
