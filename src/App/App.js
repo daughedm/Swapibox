@@ -35,7 +35,7 @@ class App extends Component {
 
   updateFavorites = (favorites, selectedCard) => {
     const match = favorites.find(item => item === selectedCard);
-    selectedCard.favorite = match ? "false" : "true";
+    // selectedCard.favorite = match ? "false" : "true";
 
     return match ? this.removeFavorite(favorites, selectedCard) : [...favorites, selectedCard];
   }
@@ -84,7 +84,8 @@ class App extends Component {
         <Navigation 
           className="App-header"
           favorites={this.state.favorites}
-          handleClick={this.handleClick} />
+          handleClick={this.handleClick}
+          currentCategory={this.state.currentCategory} />
         { onLandingPage ? (
           <OpeningScroll crawl={this.state.crawl}/> 
         ) : (

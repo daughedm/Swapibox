@@ -30,6 +30,10 @@ $light-bg: rgb(214, 215, 231);
   cursor: pointer;
 }
 
+.border {
+  border: 3px dashed $sw-yellow;
+}
+
 .icon {
   width: 70%;
   display: block;
