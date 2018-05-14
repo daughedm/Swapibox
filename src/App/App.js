@@ -34,13 +34,11 @@ class App extends Component {
   }
 
   updateFavorites = (favorites, selectedCard) => {
-    const match = favorites.find(item => item === selectedCard);
-    // selectedCard.favorite = match ? "false" : "true";
-
-    return match ? this.removeFavorite(favorites, selectedCard) : [...favorites, selectedCard];
+    const matchingCard = favorites.find(card => card === selectedCard);
+    return matchingCard ? this.removeFavorite(favorites, selectedCard) : [...favorites, selectedCard];
   }
 
-  removeFavorite = (favoritesList, card) => favoritesList.filter(item => item !== card);
+  removeFavorite = (favoritesList, selectedCard) => favoritesList.filter(card => card !== selectedCard);
 
   handleClick = async (category) => {
     const vehicleUrl = 'https://swapi.co/api/vehicles/';

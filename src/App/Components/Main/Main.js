@@ -85,9 +85,24 @@ const Main = ({
 };
 Main.propTypes = {
   favorites: PropTypes.array,
-  people: PropTypes.array,
-  planets: PropTypes.array,
-  vehicles: PropTypes.array,
+  people: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  planets: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  vehicles: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
   currentCategory: PropTypes.string,
   addFavorite: PropTypes.func,
 };

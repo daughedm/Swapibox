@@ -36,7 +36,12 @@ const PlanetCard = ({ Data, image, addFavorite }) => {
 };
 
 PlanetCard.propTypes = {
-  Data: PropTypes.object,
+  Data: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
   image: PropTypes.string,
   addFavorite: PropTypes.func
 };
