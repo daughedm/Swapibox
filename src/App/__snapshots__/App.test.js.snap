@@ -20,6 +20,7 @@ ShallowWrapper {
       "children": Array [
         <Navigation
           className="App-header"
+          currentCategory=""
           favorites={Array []}
           handleClick={[Function]}
 />,
@@ -37,6 +38,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "className": "App-header",
+          "currentCategory": "",
           "favorites": Array [],
           "handleClick": [Function],
         },
@@ -67,6 +69,7 @@ ShallowWrapper {
         "children": Array [
           <Navigation
             className="App-header"
+            currentCategory=""
             favorites={Array []}
             handleClick={[Function]}
 />,
@@ -84,6 +87,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "className": "App-header",
+            "currentCategory": "",
             "favorites": Array [],
             "handleClick": [Function],
           },

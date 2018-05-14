@@ -32,7 +32,10 @@ const PeopleCard = ({ Data, image, addFavorite}) => {
 };
 
 PeopleCard.propTypes = {
-  Data: PropTypes.object,
+  Data: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array]),
   image: PropTypes.string,
   addFavorite: PropTypes.func
 };
