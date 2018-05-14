@@ -1,6 +1,6 @@
-![Opening Page](src/Assets/images/openingscreen.png)
+![Opening Page](./src/Assets/Images/openingscreen.png)
 
-![Card Page](src/Assets/images/cardscreen.png)
+![Card Page](./src/Assets/Images/cardscreen.png)
 
 
 # Swapi-Box
